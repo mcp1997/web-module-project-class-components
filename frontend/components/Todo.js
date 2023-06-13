@@ -4,7 +4,7 @@ export default class Todo extends React.Component {
   render() {
     return (
       <div>
-        Todo
+        <h4 onClick={() => this.props.handleComplete(this.props.todo.id)} className={this.props.todo.completed ? 'todo completed' : 'todo'}>{this.props.todo.task}</h4>
       </div>
     )
   }
